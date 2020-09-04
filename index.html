@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
 	</head>
 	<body class="is-preload">
 
@@ -35,7 +36,7 @@
 											</h1>
 											<p>Smile as you embark on your coding journey!</p>
 										</header>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<p>We know that there are a lot of people who want to </p>
 										<ul class="actions">
 											<li><a href="#" class="button big">Learn More</a></li>
 										</ul>
@@ -142,6 +143,21 @@
 						</div>
 					</div>
 
+					<div class="chat-container"></div>
+
+					<script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+					<script type="text/javascript">
+					  var chatroom = new window.Chatroom({
+						host: "http://localhost:5005",
+						title: "Chat with Mike",
+						container: document.querySelector(".chat-container"),
+						welcomeMessage: "Hi, I am Mike. How may I help you?",
+						speechRecognition: "en-US",
+						voiceLang: "en-US"
+					  });
+					  chatroom.openChat();
+					</script>
+
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
@@ -163,6 +179,19 @@
 										<li><a href="environment.html">Setting up your environment</a></li>
 										<li><a href="programming-languages.html">Programming Languages</a></li>
 										<li><a href="open-source.html">Open Source |GitHub|</a></li>
+										<li><a href="ML.html">Machine Learning</a></li>
+										<li><a href="webinars.html">Live Webinars</a></li>
+										<li><a href="fundae-interviews.html">Interviews</a></li>
+										<li><a href="cp.html">Competitive Programming</a></li>
+										<!-- <li>
+											<span class="opener">Competitive Programming</span>
+											<ul>
+												<li><a href="#">Data Structures</a></li>
+												<li><a href="#">Algorithms</a></li>
+												<li><a href="#">Practice</a></li>
+												<li><a href="#">Boom!</a></li>
+											</ul>
+										</li>
 										<li>
 											<span class="opener">Machine Learning</span>
 											<ul>
@@ -173,17 +202,7 @@
 												<li><a href="#">Image Processing</a></li>
 											</ul>
 										</li>
-										<li><a href="webinars.html">Live Webinars</a></li>
-										<li><a href="fundae-interviews.html">Interviews</a></li>
-										<li>
-											<span class="opener">Competitive Programming</span>
-											<ul>
-												<li><a href="#">Data Structures</a></li>
-												<li><a href="#">Algorithms</a></li>
-												<li><a href="#">Practice</a></li>
-												<li><a href="#">Boom!</a></li>
-											</ul>
-										</li>
+									-->
 										<li><a href="linux.html">Linux</a></li>
 										<li><a href="web-dev.html">Web Development</a></li>
 										<li><a href="probab.html">Probability and Statistics</a></li>
